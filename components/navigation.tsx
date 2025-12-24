@@ -173,42 +173,42 @@ export function Navigation() {
         <nav className="hidden md:flex items-center space-x-12">
           <Link
             href="/platform"
-            className="text-base font-medium text-muted-foreground hover:text-primary transition-colors"
+            className="text-base font-bold text-muted-foreground hover:text-primary transition-colors"
           >
             데이터허브 소개
           </Link>
           {(!isMounted || userRole !== "admin") && (
             <Link
               href="/knowledge"
-              className="text-base font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-base font-bold text-muted-foreground hover:text-primary transition-colors"
             >
               지식센터
             </Link>
           )}
           <Link
             href="/visualization"
-            className="text-base font-medium text-muted-foreground hover:text-primary transition-colors"
+            className="text-base font-bold text-muted-foreground hover:text-primary transition-colors"
           >
             가시화 서비스
           </Link>
           {(!isMounted || userRole !== "admin") && (
             <Link
               href="/collaboration"
-              className="text-base font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-base font-bold text-muted-foreground hover:text-primary transition-colors"
             >
               협업 게시판
             </Link>
           )}
           <Link
             href="/contact"
-            className="text-base font-medium text-muted-foreground hover:text-primary transition-colors"
+            className="text-base font-bold text-muted-foreground hover:text-primary transition-colors"
           >
             문의하기
           </Link>
           {isMounted && isLoggedIn && userRole === "admin" && (
             <Link
               href="/admin/dashboard"
-              className="text-base font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-base font-bold text-muted-foreground hover:text-primary transition-colors"
             >
               관리자 페이지
             </Link>
